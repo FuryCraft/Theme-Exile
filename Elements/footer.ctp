@@ -34,6 +34,16 @@
                             endforeach;
                         endif;
                     ?>
+		    <?php
+                        endif;
+                        if(!empty($mailto_link)):
+                    ?>
+                        <a class="contact-link"><b>Mail : </b><?= $mailto_link ?></a>
+		    <?php
+                        endif;
+                        if(!empty($discord_link)):
+                    ?>
+                        <a class="contact-link"><b>Discord : </b><?= $discord_link ?></a>
                     <?php
                         if(!empty($facebook_link)): ?>
                         <a class="contact-link"><b>Facebook : </b><?= $facebook_link ?></a>
